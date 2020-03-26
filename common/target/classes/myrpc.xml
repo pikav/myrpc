@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans>
+
+    <bean id="testService" class="com.pikav.example.impl.CalcServiceImpl"/>
+
+    <service interface="com.pikav.example.CalcService" ref="testService"/>
+
+    <reference id="testService" interface="com.pikav.example.CalcService"/>
+
+</beans>
